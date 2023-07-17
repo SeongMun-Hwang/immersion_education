@@ -33,5 +33,5 @@ echo "</tr>";
 }
 mysqli_close($con);
 echo "</table>";
-echo "<br> <a href='main.html'>첫화면</a>";
+echo "<br> <a href='main.html'>첫 화면</a>";
 ?>

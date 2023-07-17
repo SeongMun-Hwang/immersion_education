@@ -23,5 +23,5 @@ else {
     echo "실패 원인 : ".mysqli_error($con);
 }
 mysqli_close($con);
-echo "<br> <a href='main.html'>첫화면</a>";
+echo "<br> <a href='main.html'>첫 화면</a>";
 ?>

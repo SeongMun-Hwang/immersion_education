@@ -15,6 +15,6 @@
             <br>
             <input type="submit" value="정보 입력">
         </form>
-        <br><a href="main.html">첫화면</a>
+        <br><a href="main.html">첫 화면</a>
     </body>
 </html>
