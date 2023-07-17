@@ -7,10 +7,10 @@ $addr=$_POST["addr"];
 $mobile1=$_POST["mobile1"];
 $mobile2=$_POST["mobile2"];
 $height=$_POST["height"];
-$mDate=$_POST["mDate"];
+$mDate=date("Y-m-j");
 
-$sql="isert into usertbl values('".$userID."','".$name."','".$birthYear;
-$sql=$sql.",'".$addr."','".$mobile1."','".$mobile2."','".$height."','".$mDate;
+$sql="insert into usertbl (userID, name, birthYear, addr, mobile1, mobile2, height, mDate)
+      values('".$userID."','".$name."','".$birthYear."','".$addr."','".$mobile1."','".$mobile2."',".$height.",'".$mDate."')";
 
 $ret =mysqli_query($con,$sql);
 
@@ -23,4 +23,5 @@ else {
     echo "실패 원인 : ".mysqli_error($con);
 }
 mysqli_close($con);
+echo "<br> <a href='main.html'>첫화면</a>";
 ?>
