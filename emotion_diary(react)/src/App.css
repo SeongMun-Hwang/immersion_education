@@ -1,4 +1,4 @@
-/*DiaryEditor.js css start*/
+/*DiaryEditor.js css*/
 .DiaryEditor{
   border: 1px solid grey;
   text-align: center;
@@ -26,9 +26,8 @@
   padding: 10px;
   cursor: pointer;
 }
-/*DiaryEditor.js css end*/
 
-/*DiaryList.js css start*/
+/*DiaryList.js css*/
 .DiaryList {
   border: 1px solid grey;
   padding: 20px;
@@ -39,6 +38,8 @@
   text-align: center;
 }
 
+
+/*DiaryItemjs css*/
 .DiaryItem {
   background-color: rgb(240, 240, 240);
   margin-bottom: 10px;
