@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useCallback, useRef, useState } from "react";
 
 const DiaryItem=({onEdit, onDelete, id, author, content, emotion, created_date})=>{
     const handleDelete=()=>{
