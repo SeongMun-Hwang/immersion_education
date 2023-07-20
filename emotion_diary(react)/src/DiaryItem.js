@@ -1,6 +1,7 @@
-import { useCallback, useEffect, useRef, useState } from "react";
-
-const DiaryItem=({onEdit, onDelete, id, author, content, emotion, created_date})=>{
+import React, { useCallback, useContext, useRef, useState } from "react";
+import { DiaryDispatchContext } from "./App";
+const DiaryItem=({id, author, content, emotion, created_date})=>{
+    const {onEdit,onDelete}=useContext(DiaryDispatchContext);
     const handleDelete=()=>{
         if(window.confirm(`${id}번째 일기를 정말 삭제하시겠습니까?`)){
             onDelete(id);

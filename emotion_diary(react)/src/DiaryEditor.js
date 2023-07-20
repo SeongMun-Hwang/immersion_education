@@ -1,6 +1,8 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import React, { useCallback, useContext, useEffect, useRef, useState } from "react";
+import { DiaryDispatchContext } from "./App";
 
-const DiaryEditor=({onCreate})=>{
+const DiaryEditor=()=>{
+    const {onCreate}=useContext(DiaryDispatchContext)
     const authorInput=useRef();
     const contentInput=useRef();
 
@@ -30,7 +32,6 @@ const DiaryEditor=({onCreate})=>{
             return ;
         }
         onCreate(state.author,state.content,state.emotion)
-        console.log("저장 성공");
         setState({
             author: "",
             content: "",
