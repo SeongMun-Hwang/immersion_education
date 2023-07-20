@@ -1,4 +1,4 @@
-import { useCallback, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 const DiaryItem=({onEdit, onDelete, id, author, content, emotion, created_date})=>{
     const handleDelete=()=>{
@@ -51,4 +51,4 @@ const DiaryItem=({onEdit, onDelete, id, author, content, emotion, created_date})
     );
 };
 
-export default DiaryItem
+export default React.memo(DiaryItem);
