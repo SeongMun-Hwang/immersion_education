@@ -2,8 +2,7 @@ package com.codepresso.controllerExercise.controller;
 
 import com.codepresso.controllerExercise.dto.postDto;
 import com.codepresso.controllerExercise.service.PostService;
-import org.springframework.web.bind.annotation.*;
-import static org.springframework.web.bind.annotation.RequestMethod.*;
+
 
 @RestController
 @RequestMapping(value = "/post")
@@ -17,6 +16,7 @@ public class postController {
     public postDto getPost(@RequestParam Integer id){
         postDto result=postService.getPost(id);
         return result;
+
     }
     @PostMapping
     public String savePost(@RequestBody postDto post){ //request body -> 전송
