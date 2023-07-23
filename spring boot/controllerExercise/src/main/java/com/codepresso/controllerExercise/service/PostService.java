@@ -1,7 +1,6 @@
 package com.codepresso.controllerExercise.service;
 import com.codepresso.controllerExercise.dto.postDto;
 import org.springframework.stereotype.Service;
-
 @Service
 public class PostService {
     public postDto getPost(Integer id){
