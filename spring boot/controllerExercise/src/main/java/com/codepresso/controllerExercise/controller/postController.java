@@ -1,5 +1,5 @@
 package com.codepresso.controllerExercise.controller;
-
+import org.springframework.web.bind.annotation.*;
 import com.codepresso.controllerExercise.dto.postDto;
 import com.codepresso.controllerExercise.service.PostService;
 
