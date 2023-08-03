@@ -1,0 +1,6 @@
+[submodule "azure-function"]
+	path = azure-function
+	url = https://github.com/SeongMun-Hwang/azure-function.git
+[submodule "ssb_project"]
+	path = ssb_project
+	url = https://github.com/SeongMun-Hwang/ssb_project.git
