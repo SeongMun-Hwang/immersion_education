@@ -4,3 +4,6 @@
 [submodule "ssb_project"]
 	path = ssb_project
 	url = https://github.com/SeongMun-Hwang/ssb_project.git
+[submodule "portfolio"]
+	path = portfolio
+	url = https://github.com/SeongMun-Hwang/portfolio.git
