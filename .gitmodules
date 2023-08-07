@@ -7,6 +7,3 @@
 [submodule "portfolio"]
 	path = portfolio
 	url = https://github.com/SeongMun-Hwang/portfolio.git
-[submodule "auto_reply"]
-	path = auto_reply
-	url = https://github.com/SeongMun-Hwang/auto_reply
